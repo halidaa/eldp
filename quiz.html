@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Responsive Website Design for Designers</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500italic,500,400italic,300italic' rel='stylesheet' type='text/css'>
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link rel="stylesheet" href="css/global.css" media="all">
+<link rel="stylesheet" href="css/layout.css" media="all and (min-width: 33.236em)">
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
+<script src="js/libs/modernizr-1.7.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/script.js"></script>  
+  
+</head>
+
+<body>
+  
+  <div id="container" class="cf">
+    
+    <header>
+		<h1 class="global-title">
+			Responsive Website Design for Designers
+		</h1>
+		<h2 class="lesson-title">
+			Quiz
+		</h2>
+	</header>
+    
+    <div id="main" role="main">
+		<aside id="lesson-nav">
+			<h3><i class="fa fa-navicon"></i>Lessons</h3>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Becoming Responsive">Becoming Responsive</a></li>
+					<li><a href="lesson-2.html" title="Spanning vs Stacking">Spanning vs Stacking</a></li>
+					<li><a href="placeholder.html" title="Texts vs Icons">Texts vs Icons</a></li>
+					<li><a href="lesson-4.html" title="Showing and Hiding Elements">Showing and Hiding Elements</a></li>
+					<li><a href="lesson-5.html" title="Whitespaces">Whitespaces</a></li>
+					<li><a href="#" class="current" title="Quiz">Quiz</a></li>
+					<li><a href="practice.html" title="Practice">Practice</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="content">
+			<h4 style="margin-top:0">Select the best answers for the following questions.</h4>
+			<ol>
+				<li class="question">
+					Which of the following methods works best for list items on website content?
+					<ol type="a">
+						<li class="option" data-feedback-type="feed-true" data-feedback-text="Correct! When there are list items, or items with generally similar layout, spanning vs stacking should be considered first.">Stack items vertically on mobile, span them horizontally on bigger screens</li>
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. Whitespaces works best when there are no other contents you can add to the layout.">Add whitespaces on bigger screens</li>
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. Icons are used for short texts that can be symbolized, which is not always the case in list items.">Use icons on mobile, and icons plus texts on bigger screens</li>
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. Showing and hiding elements would work on contents with different levels of importance, which is usually not the case on list items.">Hide elements on mobile, show them on bigger screens</li>
+					</ol>
+					<div class="feedback"></div>
+				</li>
+				<li class="question">
+					When should you use whitespace to handle responsive design?
+					<ol type="a">
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. Whitespace <i>is</i> fast and effective, but most of the time there are other options that can be considered. It's best to tend to all the details.">Every time. It's fast and effective.</li>
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. While whitespace does improve minimalism, in most cases a desktop layout would be too empty if it goes by its mobile layout plus whitespace.">When minimalism is the goal of the website.</li>
+						<li class="option" data-feedback-type="feed-true" data-feedback-text="Correct! Whitespaces should be used when other techniques have been used and there are no additional contents that can be added.">When there is limited data that can be displayed and there are no columns that can be added.</li>
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. Whitespaces are used when there are no additional contents that can be added to the layout.">When elements can be hidden.</li>
+					</ol>
+					<div class="feedback"></div>
+				</li>
+				<li class="question">
+					How do you decide between using hamburger menu and icons for navigation?
+					<ol type="a">
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. Both options are useful for navigation menu. Hamburger menu would be preferable if there are too many navigation items (the maximum is usually 3-4) or the menus are too complicated to be represented by icons. Icons can be used when the navigation menus have icons that are easily recognisable.">Hamburger menu should be used in mobile layouts, and icons should be added when there is extra space.</li>
+						<li class="option" data-feedback-type="feed-true" data-feedback-text="Partly correct! Hamburger menu should also be used when there are too many items in the navigation.">Hamburger menu can be used when the menus are too complicated to be represented by icons.</li>
+						<li class="option" data-feedback-type="feed-true" data-feedback-text="Correct! Hamburger menu can contain a lot more menu whereas when using icons, you can only have so much space.">Hamburger menu should be used when there are too many items in the navigation, or when icons can't be used to represent the items in navigation.</li>
+						<li class="option" data-feedback-type="feed-false" data-feedback-text="That's not quite right. While there has been debate over the use of hamburger menu, it is still the most common way to contain your navigation when you have too many things to display. However, when you can use icon, that's preferable!">Hamburger menu should be avoided. Icons rule!</li>
+					</ol>
+					<div class="feedback"></div>
+				</li>
+			</ol>
+			<h4>Great job on the quiz! I hope you learn something new :)</h4>
+			<div class="bottom-nav">
+				<a class="btn prev" href="lesson-5.html" title="Whitespaces">&larr; Prev</a>
+				<a class="btn next" href="practice.html" title="Practice">Next &rarr;</a>
+			</div>
+		</div>
+	</div>
+    
+    <footer></footer>
+    
+  </div>
+
+</body>
+
+</html>

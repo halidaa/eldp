@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Responsive Website Design for Designers</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500italic,500,400italic,300italic' rel='stylesheet' type='text/css'>
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link rel="stylesheet" href="css/global.css" media="all">
+<link rel="stylesheet" href="css/layout.css" media="all and (min-width: 33.236em)">
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
+<script src="js/libs/modernizr-1.7.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.0/css/fluidbox.min.css" media="all">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.0/jquery.fluidbox.min.js"></script>
+<script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/script.js"></script>  
+  
+</head>
+
+<body>
+  
+  <div id="container" class="cf">
+    
+    <header>
+		<h1 class="global-title">
+			Responsive Website Design for Designers
+		</h1>
+		<h2 class="lesson-title">
+			Spanning vs Stacking
+		</h2>
+	</header>
+    
+    <div id="main" role="main">
+		<aside id="lesson-nav">
+			<h3><i class="fa fa-navicon"></i>Lessons</h3>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Becoming Responsive">Becoming Responsive</a></li>
+					<li><a href="#" class="current" title="Spanning vs Stacking">Spanning vs Stacking</a></li>
+					<li><a href="placeholder.html" title="Texts vs Icons">Texts vs Icons</a></li>
+					<li><a href="lesson-4.html" title="Showing and Hiding Elements">Showing and Hiding Elements</a></li>
+					<li><a href="lesson-5.html" title="Whitespaces">Whitespaces</a></li>
+					<li><a href="quiz.html" title="Quiz">Quiz</a></li>
+					<li><a href="practice.html" title="Practice">Practice</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="content">
+			<p>One of the most common way to handle responsive design in the industry is changing the flow of blocks of layout elements. Grids and columns are the base foundation of this technique. In mobile design, layouts are most likely done in single columns, so it is also important to group things together before using this technique.</p>
+			<h4>Case study: Erik Ford</h4>
+			<div class="shots">
+			  <a href="http://mediaqueri.es/static/shots/efo.smartphone.thumb.jpg" class="screen">
+				<img class="smartphone" src="http://mediaqueri.es/static/shots/efo.smartphone.thumb.jpg">
+			  </a>
+			  <a href="http://mediaqueri.es/static/shots/efo.tablet.thumb.jpg" class="screen">
+				<img class="tablet" src="http://mediaqueri.es/static/shots/efo.tablet.thumb.jpg">
+			  </a>
+			  <a href="http://mediaqueri.es/static/shots/efo.desktop.thumb.jpg" class="screen">
+				<img class="desktop" src="http://mediaqueri.es/static/shots/efo.desktop.thumb.jpg">
+			  </a>
+			  <a class="weblink" target="_blank" href="http://www.erikford.me/" title="Erik Ford">http://www.erikford.me/</a>
+			</div>
+			<div class="caption">Erik Ford's gallery has different numbers of columns according to the device size.</div>
+			<p>Notice the gallery from the example above. When the width of the screen increases, elements that are originally vertically stacked slowly becomes horizontally spanned. As more space opens up, the number of columns increases.</p>
+			<p>This method works best for list items or blocks of elements with the same level of priority.</p>
+			<div class="bottom-nav">
+				<a class="btn prev" href="lesson-1.html" title="Scaling">&larr; Prev</a>
+				<a class="btn next" href="placeholder.html" title="Texts vs Icons">Next &rarr;</a>
+			</div>
+		</div>
+	</div>
+    
+    <footer></footer>
+    
+  </div>
+
+</body>
+
+</html>

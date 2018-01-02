@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Responsive Website Design for Designers</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500italic,500,400italic,300italic' rel='stylesheet' type='text/css'>
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link rel="stylesheet" href="css/global.css" media="all">
+<link rel="stylesheet" href="css/layout.css" media="all and (min-width: 33.236em)">
+<link rel="stylesheet" type="text/css" href="css/jquery.gridster.css">
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
+<script src="js/libs/modernizr-1.7.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/script.js"></script>  
+
+  
+</head>
+
+<body>
+  
+  <div id="container" class="cf">
+    
+    <header>
+		<h1 class="global-title">
+			Responsive Website Design for Designers
+		</h1>
+		<h2 class="lesson-title">
+			Practice
+		</h2>
+	</header>
+    
+    <div id="main" role="main">
+		<aside id="lesson-nav">
+			<h3><i class="fa fa-navicon"></i>Lessons</h3>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Becoming Responsive">Becoming Responsive</a></li>
+					<li><a href="lesson-2.html" title="Spanning vs Stacking">Spanning vs Stacking</a></li>
+					<li><a href="placeholder.html" title="Texts vs Icons">Texts vs Icons</a></li>
+					<li><a href="lesson-4.html" title="Showing and Hiding Elements">Showing and Hiding Elements</a></li>
+					<li><a href="lesson-5.html" title="Whitespaces">Whitespaces</a></li>
+					<li><a href="quiz.html" title="Quiz">Quiz</a></li>
+					<li><a href="#" class="current" title="Practice">Practice</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="content">
+			<h4 style="margin-top:0">Given the following mobile design, create a tablet design for it.</h4>
+			<div id="instruction">
+				<p style="margin-bottom:0">Read the following instruction carefully before starting:</p>
+				<ul style="margin-bottom:0">
+					<li>"NAV" is a hamburger menu for navigation. There are three menu items inside it.</li>
+					<li>The mobile design uses three columns. Tablet design should use six.</li>
+					<li>Grey boxes are <i>not</i> part of the layout elements.</li>
+					<li>Faded-colored boxes are hidden elements.</li>
+					<li>Arrange the existing elements below the grey box by dragging & dropping them.</li>
+					<li>You may decide to not include some elements in the tablet design. If you choose to do so, leave the elements above the grey box.</li>
+					<li>You can hover to the bottom right corner to resize the item.</li>
+				</ul>
+			</div>
+			<a href="#" class="toggle-instruction">Hide Instruction</a>
+			<p class="mobile-only caption">This practice mode is not optimized for access from mobile devices.</p>
+			<div class="no-mobile">
+				<div class="gridster">
+					<ul>
+						<li data-row="1" data-col="1" data-sizex="3" data-sizey="1">TITLE</li>
+						<li data-row="1" data-col="4" data-sizex="3" data-sizey="1" style="background-color:#575757;opacity:.5">HIDDEN ELEMENTS</li>
+						<li data-row="2" data-col="1" data-sizex="1" data-sizey="1">NAV</li>
+						<li data-row="2" data-col="2" data-sizex="2" data-sizey="1">SEARCH</li>
+						<li data-row="2" data-col="4" data-sizex="3" data-sizey="2" class="faded">CONTACT FORM</li>
+						<li data-row="3" data-col="1" data-sizex="3" data-sizey="3">FEATURED IMAGE</li>
+						<li data-row="3" data-col="4" data-sizex="3" data-sizey="2" class="faded">ABOUT</li>
+						<li data-row="6" data-col="1" data-sizex="3" data-sizey="2">IMAGE 1</li>
+						<li data-row="6" data-col="4" data-sizex="3" data-sizey="2" class="faded">DECORATIVE IMAGE</li>
+						<li data-row="8" data-col="1" data-sizex="3" data-sizey="2">IMAGE 2</li>
+						<li data-row="10" data-col="1" data-sizex="3" data-sizey="1">FOOTER</li>
+
+						<li data-row="10" data-col="1" data-sizex="6" data-sizey="1" id="answer-separator" style="background-color:#575757;">ARRANGE YOUR ANSWER BELOW THIS BOX</li>
+					</ul>
+				</div>
+				<h4>For each element, list the changes you did and the reason.</h4>
+				<ol id="self-explain">
+					<li value="1">
+						Title
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="2">
+						Navigation Menu
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="3">
+						Search Bar
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="4">
+						Featured Image
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="5">
+						Images
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="6">
+						Footer
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="7">
+						About
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="8">
+						Contact Form
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li value="9">
+						Decorative Image
+						<ul class="options">
+							<li>
+								<label>Scaling</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Expanded height</option>
+										<option>Reduced height</option>
+										<option>Same height</option>
+									</select>,
+									
+									<select>
+										<option>---</option>
+										<option>Expanded width</option>
+										<option>Reduced width</option>
+										<option>Same width</option>
+									</select>
+									
+									<select>
+										<option>---</option>
+										<option>To beter utilize screen real-estate</option>
+										<option>To save space for more important things</option>
+										<option>To fill up empty space</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Hiding/showing elements</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Hidden</option>
+										<option>Partially hidden</option>
+										<option>Shown</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>It's unnecessary</option>
+										<option>Users can afford to access it with extra effort</option>
+										<option>To better utilize screen real-estate</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Stacking/spanning</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Stacked</option>
+										<option>Spanned</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>Elements with similar hierarchy level can be spanned on wide screen</option>
+										<option>Elements with similar hierarchy level should always be stacked</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<label>Whitespace</label>
+								<div class="explain">
+									<select>
+										<option>---</option>
+										<option>Added whitespace</option>
+										<option>Removed whitespace</option>
+									</select>
+									because
+									<select>
+										<option>---</option>
+										<option>No other important elements to display</option>
+										<option>Minimalism</option>
+										<option>To save up space</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ol>
+				<div class="bottom-nav">
+					<a class="btn prev practice-nav" href="#" title="Prev">&larr; Prev</a>
+					<a class="btn next practice-nav" href="#" title="Next">Next &rarr;</a>
+				</div>
+			</div>
+			<div class="bottom-nav">
+				<a class="btn prev" href="quiz.html" title="Quiz">&larr; Prev</a>
+			</div>
+		</div>
+	</div>
+    
+    <footer></footer>
+    
+  </div>
+
+</body>
+
+</html>

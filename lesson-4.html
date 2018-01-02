@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Responsive Website Design for Designers</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500italic,500,400italic,300italic' rel='stylesheet' type='text/css'>
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link rel="stylesheet" href="css/global.css" media="all">
+<link rel="stylesheet" href="css/layout.css" media="all and (min-width: 33.236em)">
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
+<script src="js/libs/modernizr-1.7.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.0/css/fluidbox.min.css" media="all">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.0/jquery.fluidbox.min.js"></script>
+<script src="js/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/script.js"></script>  
+  
+</head>
+
+<body>
+  
+  <div id="container" class="cf">
+    
+    <header>
+		<h1 class="global-title">
+			Responsive Website Design for Designers
+		</h1>
+		<h2 class="lesson-title">
+			Showing and Hiding Elements
+		</h2>
+	</header>
+    
+    <div id="main" role="main">
+		<aside id="lesson-nav">
+			<h3><i class="fa fa-navicon"></i>Lessons</h3>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Becoming Responsive">Becoming Responsive</a></li>
+					<li><a href="lesson-2.html" title="Spanning vs Stacking">Spanning vs Stacking</a></li>
+					<li><a href="placeholder.html" title="Texts vs Icons">Texts vs Icons</a></li>
+					<li><a href="#" class="current" title="Showing and Hiding Elements">Showing and Hiding Elements</a></li>
+					<li><a href="lesson-5.html" title="Whitespaces">Whitespaces</a></li>
+					<li><a href="quiz.html" title="Quiz">Quiz</a></li>
+					<li><a href="practice.html" title="Practice">Practice</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="content">
+			<p>When you have plenty of content to go with, you can show and hide some contents according to their priority and the space you have to display them. This technique would be very closely related to content hierarchy, so make sure that you have your contents prioritized well before you use this technique!</p>
+			<h4>Case study: CapRadio Go Anywhere Raffle</h4>
+			<div class="shots">
+			  <a class="screen" href="http://mediaqueri.es/static/shots/crr.smartphone.thumb.jpg">
+				<img class="smartphone" src="http://mediaqueri.es/static/shots/crr.smartphone.thumb.jpg">
+			  </a>
+			  <a class="screen" href="http://mediaqueri.es/static/shots/crr.tablet.thumb.jpg">
+				<img class="tablet" src="http://mediaqueri.es/static/shots/crr.tablet.thumb.jpg">
+			  </a>
+			  <a class="screen" href="http://mediaqueri.es/static/shots/crr.netbook.thumb.jpg">
+				<img class="desktop" src="http://mediaqueri.es/static/shots/crr.netbook.thumb.jpg">
+			  </a>
+			  <a class="weblink" target="_blank" href="http://www.capradioraffle.org/" title="CapRadio Raffle">http://www.capradioraffle.org/</a>
+			</div>
+			<div class="caption">CapRadio Go Anywhere Raffle's website displays different amount of information according to the screen real-estate they have.</div>
+			<p>Notice on this site that each screen size contains different amount of information. The information displayed on the mobile site is very concise and critical, while the tablet site has more complete information. Also notice the use of "hamburger menu" (the three horizontal lines that will display the navigation menu when clicked) on both the mobile and tablet sites. On the desktop site, this hamburger menu is gone, but there is a mini sidebar that contains the site's navigation.</p>
+			<p>When using this method, content hierarchy is very important. You also have to think about the context why the users visit the site. In the above example, mobile users can't see the persistent black footer that is visible on tablet and desktop. This is because of the limited space on mobile, and the consideration that "share to win" would not be the appropriate call to action on the device. Users need to first know what the raffle is about, and that is what the site prioritizes.</p>
+			<p>This method works best when you have a lot of contents with different priority.</p>
+			<h4>Additional note on the use of hamburger menu</h4>
+			<img class="header-img" src="http://2.bp.blogspot.com/-gNXr6EgpMXE/UbJsLJKOgGI/AAAAAAAAAMg/A7preNhxZSw/s1600/Bun_Bun_Meat.png" title="Hamburger Menu" />
+			<div class="caption">A little story of how hamburger menu got its name!</div>
+			<p>It has been up to debate lately, whether the use of hamburger menu is the best way for mobile sites. Among the noted issues are lower discoverability, less efficient, and not glanceable (<a href="https://lmjabreu.com/post/why-and-how-to-avoid-hamburger-menus/" title="LMJabreu">source</a>). However, personally, I still think that hamburger menu is a simple way to handle navigation. As a compromise, I can suggest this rule, that when your navigation menus are short enough to span horizontally on one line, then display all the menus. Or, if you can use icons that are easily understandable to replace your menus, go for it! Otherwise, hamburger menu can be used.</p>
+			<div class="bottom-nav">
+				<a class="btn prev" href="placeholder.html" title="Texts vs Icons">&larr; Prev</a>
+				<a class="btn next" href="lesson-5.html" title="Whitespaces">Next &rarr;</a>
+			</div>
+		</div>
+	</div>
+    
+    <footer></footer>
+    
+  </div>
+
+</body>
+
+</html>
