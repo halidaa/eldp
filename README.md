@@ -1,5 +1,5 @@
-#E-Learning Design Principles
-##Final Project Prototype
+# E-Learning Design Principles
+## Final Project Prototype
 
 This website illustrate an e-learning structure and system on Responsive Website Design for Designers. The course is targeted towards design professionals and design students between the ages of 20-35 years old. The course is intended to be run on an asynchronous e-learning environment.
 
