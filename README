@@ -1,16 +1,8 @@
-Goldilocks Approach
-===================
+#E-Learning Design Principles
+##Final Project Prototype
 
-A good starting point for responsive web design that takes device resolution out of the equation
+This website illustrate an e-learning structure and system on Responsive Website Design for Designers. The course is targeted towards design professionals and design students between the ages of 20-35 years old. The course is intended to be run on an asynchronous e-learning environment.
 
-How does it work?
------------------
+Students are given short lessons with case studies, then are asked to do a short quiz and a mini practice. The mini practice also requires the student to explain the basis of their answer, which will then be manually assessed by the instructor. The key principles used in this course are worked examples, practice with feature focusing, and self-explanation.
 
-The Goldilocks Approach uses a combination of Ems, Max-Width, Media Queries and Pattern Translations to consider just three states that allow your designs to be resolution independent. Check out the example.html page included to see how it works.
-
-It contains
------------
-
-* 2 well commented CSS files that consider 3 CSS Media Query increments; multi column, narrow column and single column
-* Good typographic defaults out of the box (including print contexts)
-* A boilerplate HTML file to get you started (index.html)
+Built using [Goldilocks Approach](https://github.com/designbyfront/The-Goldilocks-Approach). The full presentation for my final project can be viewed [here](https://docs.google.com/presentation/d/1XNfgVOY-h6svocoKyUh3CzebzKMFvhyHASEYj8DtJv0/edit?usp=sharing).
